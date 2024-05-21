@@ -8,7 +8,7 @@ public:
 		return a * b;
 	}
 	int getZegop(int a) {
-		return 0;
+		return a * a;
 	}
 	int getMinus(int a, int b) {
 		return a - b;
