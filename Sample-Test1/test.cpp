@@ -14,7 +14,10 @@ TEST(calc, calcZegop) {
 }
 
 TEST(calc, calcMinus) {
-	EXPECT_EQ(1, 1);
+	Calc calc;
+	EXPECT_EQ(-1, calc.getMinus(100, 101));
+	EXPECT_EQ(-100, calc.getMinus(100, 200));
+	EXPECT_EQ(50, calc.getMinus(50, 0));
 }
 
 TEST(calc, calcDivide) {
