@@ -1,4 +1,5 @@
-﻿class Calc {
+﻿#include <stdexcept>
+class Calc {
 public:
 	int getSum(int a, int b) {
 		return 0;
@@ -13,7 +14,8 @@ public:
 		return 0;
 	}
 	int getDivide(int a, int b) {
-		return 0;
+		if (!b) throw std::invalid_argument("b cannot be zero");
+		return a / b;
 	}
 	int getSumSum(int a, int b, int c) {
 		return 0;
