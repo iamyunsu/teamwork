@@ -4,7 +4,7 @@ public:
 		return 0;
 	}
 	int getGop(int a, int b) {
-		return 0;
+		return a * b;
 	}
 	int getZegop(int a) {
 		return 0;
