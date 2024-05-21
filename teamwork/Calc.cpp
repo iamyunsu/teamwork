@@ -16,6 +16,6 @@ public:
 		return 0;
 	}
 	int getSumSum(int a, int b, int c) {
-		return 0;
+		return a + b + c;
 	}
 };

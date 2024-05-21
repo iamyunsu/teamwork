@@ -22,5 +22,10 @@ TEST(calc, calcDivide) {
 }
 
 TEST(calc, calcSumSum) {
-	EXPECT_EQ(1, 1);
+	Calc calc;
+
+	EXPECT_EQ(6, calc.getSumSum(1, 2, 3));
+	EXPECT_EQ(-6, calc.getSumSum(-1, -2, -3));
+	EXPECT_EQ(4, calc.getSumSum(-1, 2, 3));
+	EXPECT_EQ(0, calc.getSumSum(1, 2, -3));
 }
